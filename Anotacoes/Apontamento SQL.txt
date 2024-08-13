@@ -1,0 +1,36 @@
+a criação de indexes e criação de chaves aplica se as colunas de uma tabela
+
+com a clausula from podemos definir ou obter como resultado de uma consulta: 
+tabelas permanentes
+tabelas temporárias
+tabelas virtuais
+
+
+uma tabela permanente é uma tabela real, existente no meu banco de dados
+
+uma tabela temporária é uma tabela gerado através do resultado de uma consulta manipulada, UM SELECT COM OPERAÇÕES
+
+uma tabela virtual é uma tabela gerada também por uma consulta manipulada mas que fica armazenada em uma visualização (view) da estrutura do nosso banco de dados 
+
+para a coluna (atributo) escolhida como  chave primária os valores devem ser válidos ou seja correspondentes ao tipo que foi especificado no domínio
+a coluna (atributo) escolhido como chave primária não pode ter valor null
+a coluna (atributo) escolhida como chave primária não pode ter valores repetidos
+
+o conceito aplica se a restrição de integridade da entidade
+
+o chave estrageira (FOREIGN KEY) permite a associação entre duas tabelas
+ela é um atributo de uma relação que fará  referencia a chave primária de uma outra relaçao possiblitando o relacionamento (ligaçao) entre ambas tabelas
+
+uma chave estrangeira pode ter valores repetidos
+uma chave estangeira pode ter valores null
+
+a chave estrangeira faz referencia a chave primária  
+
+o conceito de chave estrangeira refere se a restrição de de integridade referencial
+
+onde os valores que serão inseridos no campo da tabela marcada como chave estrangeira deverão existir nos camps da coluna da tabela escolhida como chave primária da 
+
+quando eu chamo uma view ela faz a elaboração dos dados em tempo real isso porque a view armazena dados de uma consula
+uma view é uma tabela virtual com dados específicos de uma tabela permanente  
+
+as colunas de uma tabela são os campos ou atributos de uma tabela

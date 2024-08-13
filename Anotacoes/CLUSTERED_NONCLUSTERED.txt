@@ -1,0 +1,125 @@
+CLUSTERED
+NONCLUSTERED
+
+CLUSTERED É GERADO SEMPRE QUE GERAMOS UMA CHAVE PRIMÁRIA AO CRIAR UMA TABELA. AO EFECTUAR UMA BUSCA EM UM CAMPO CLUSRERED A BUSCA É FEITA ITEM POR ITEM ATÉ CHEGAR AO RESULTADO PRETENDIDO
+
+NONCLUSTERED É GERADO POR PADRÃO 
+
+UM INDEX(ÍNDICE) SERVE PARA FILTAR RESULTADOS, PERCORRENDO SOMENTE O NECESSÁRIO QUE NA VERDADE É UM ÚNICO VALOR APENAS NA IDEIA DE NOS DAR COMO RETORNO DIRETAMENTE O RESULTADO DO QUE FOI SOLICITADO NA PESQUISA
+
+QUANDO CRIAMOS UM INDEX(ÍNDICE), ESTAMOS A CRIAR UM RECURSO QUE REPERESENTA A MANEIRA COMO OS DADOS SÃO AGRUPADOS DE MANEIRA EXCLUSIVA EM UMA DETERMINADA TABELA.
+
+AO EFEITUAR UMA BUSCA USANDO O ÍNDICE A BUSCA É FEITA DIREITO AO PONTO OU SEJA ELE NÃO PRECISA PERCORRER TODOS OS VALORES PARA CHEGAR AO VALOR DESEJADO, NOS RETORNONDO O RESULTADO PRETNDIDO TENDO PERCORRIDO APENAS O NECESSÁRIO PARA CHEGAR AO QUE SE PRETENDE.
+TORNANDO A PESQUISA MAIS RÁPIDA E COMO CONSEQUENCIA MELHORAR A PERFORMANCE/PRODUTIVIDADE NO FUNCIONAMENTO DO SISTEMA E A ESPERIÊNCIA DE USO DO USUÁRIO 
+
+
+ID
+NAME
+EMAIL
+PASSWORDHASH
+BIO
+IMAGE
+SLUG
+
+
+CREATE TABLE usuario(
+
+id_usuario int not null,
+name_usuario varchar(100) not null,
+e_mail_usuario varchar(50) not null,
+password_hash varchar(100) not null,
+biografia_usuario text not null,
+imagem_usuario varchar(50) not null,
+slog_usuario varchar(50) not null,
+
+CONSTRAINT pk_id_usuario PRIMARY KEY(id_usuario),
+CONSTRAINT uq_e_mail_usuario UNIQUE(e_mail_usuario),
+CONSTRAINT uq_slog_usuario UNIQUE(slog_usuario)
+
+);
+
+
+create table perfil(
+
+id_perfil int not null,
+nome_perfil varchar(100) not null,
+slug_perfil varchar(100),
+
+CONSTRAINT PK_perfil PRIMARY KEY(id_perfil),
+CONSTRAINT UQ_slug_perfil UNIQUE(slug_perfil)
+
+);
+
+create table usuario_perfil(
+
+id_usuario_usuario_perfil int not null,
+id_perfil_usuario_perfil int not null,
+
+CONSTRAINT PK_usuario_perfil PRIMARY KEY(id_usuario_usuario_perfil,id_perfil_usuario_perfil)
+);
+
+
+CREATE TABLE categoria(
+
+id_categoria int not null,
+nome_categoria varchar(100),
+slug_categoria varchar(100),
+
+CONSTRAINT PK_categoria PRIMARY KEY(id_categoria),
+CONSTRAINT UQ_slug_categoria UNIQUE(slug_categoria)
+
+);
+
+CREATE INDEX IDX_slug_categoria ON categoria(slug_categoria);
+
+
+create table post(
+id_post int not null,
+categoria_id_post int not null,
+usuario_id_post int not null,
+titulo_post varchar(200),
+sumario_post varchar(200),
+body_post text not null,
+slug_post varchar(100),
+data_atualizacao_post datetime not null default(now()),
+data_ultima_atualizaco_post datetime not null default(now()),
+
+CONSTRAINT PK_post PRIMARY KEY(id_post),
+CONSTRAINT FK_categoria_id_post FOREIGN KEY(categoria_id_post) REFERENCES categoria (id_categoria),
+CONSTRAINT FK_usuario_id_post FOREIGN KEY(usuario_id_post) REFERENCES usuario (id_usuario),
+CONSTRAINT UQ_slug_post UNIQUE(slug_post)
+
+);
+
+CREATE INDEX IDX_slug_post ON post(slug_post);
+
+
+CREATE TABLE tag(
+
+id_tag int not null,
+nome_tag varchar(100),
+slug_tag varchar(100),
+
+CONSTRAINT PK_tag PRIMARY KEY(id_tag),
+CONSTRAINT UQ_slug_tag UNIQUE(slug_tag)
+
+);
+
+CREATE INDEX IDX_slug_tag ON tag (slug_tag);
+
+
+create table post_tag(
+
+id_post_post_tag int not null,
+id_tag_post_tag int not null,
+CONSTRAINT FK_post_tag PRIMARY KEY (id_post_post_tag,id_tag_post_tag)
+
+);
+
+
+
+create index idx_slog_usuario on usuario (slog_usuario);
+create index idx_email_usuario on usuario (e_mail_usuario);
+CREATE INDEX IDX_slug_perfil ON perfil(slug_perfil);
+
+

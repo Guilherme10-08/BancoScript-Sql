@@ -1,0 +1,23 @@
+
+sql é uma linguagem de consulta estruturada, com o sql nós podemos fazer consulta de dados e relacionar as tabelas de modo a obter dados de duas ou mais tabelas em uma única consulta
+
+adicionar dados
+remover dados
+restringir os dados
+relacionar os dados e muito mais
+
+podemos criar e construir o nosso banco de dados de forma visual usando diagramas ou mesmo por intermédio de comandos
+
+os comandos da ddl são os comandos de definição de dados ..apartir desses comandos nós podemos criar o banco definir a sua estrutura .. tipodos de dados e restrições 
+
+os comandos da ddl nos permitem gerenciar todo processo de criação do banco e defição do mesmo
+
+com a ddl podemos criar o banco
+criar as tabelas e adicionar colunas a essas tabelas
+alterar as tabelas adicionando novas colunas , modificar colunas até mesmo eliminar as colunas 
+eliminar o banco de dados em si
+
+definir restrições,chaves e tipagem dos dados
+
+os comandos da dml são comandos de manipulação de dados..aparir desses comandos podemos inserir registros nos campos da tabela efeituar consultas dos dados e muito mais 
+

@@ -1,0 +1,100 @@
+
+ public void Inserir_3()
+    {
+        Usuario u = new Usuario()
+        {
+            nome_usuario = "Miguel",
+            e_mail_usuario = "m2gmail.com",
+            password_hash_usuario = "pass",
+            biografia_usuario = "Modelo & Estilista",
+            imagem_usuario = "htts://imagem_miguel",
+            slug_usuario = "model-estilista"
+        };
+
+        string sql = @"INSERT INTO usuario VALUES
+        ((SELECT max(u.id_usuario)+1 FROM usuario u),
+        @nome_usuario,
+        @e_mail_usuario,
+        @password_hash_usuario,
+        @biografia_usuario,
+        @imagem_usuario,
+        @slug_usuario   
+        )";
+
+    try
+    {
+        using(Conexao)
+        {
+            Conexao.Execute(sql,new
+            {
+                u.nome_usuario,
+                u.e_mail_usuario,
+                u.password_hash_usuario,
+                u.biografia_usuario,
+                u.imagem_usuario,
+                u.slug_usuario
+            });
+        }
+
+        Console.WriteLine("Dados inseidos na base");
+    }
+    catch(Exception ex)
+    {
+        Console.WriteLine(ex.Message);
+    }
+    
+    }
+
+    public void Inserir_4()
+    {
+        string sql = @"INSERT INTO usuario VALUES
+        ((SELECT max(u.id_usuario)+1 FROM usuario u),
+        'António',
+        'anto@gmail.com',
+        'pass',
+        'biografia_usuario',
+        'imagem_usuario',
+        'slug_usuario'   
+        )";
+
+        MySqlCommand comando = new MySqlCommand();
+
+    try
+    {
+         comando.Connection = Conexao;
+         comando.CommandText = sql;
+
+        Conexao.Open();
+
+        comando.ExecuteNonQuery();
+
+        Conexao.Close();
+
+    }
+    catch(Exception ex)
+    {
+        Console.WriteLine(ex.Message);
+    }
+          
+    }
+
+    public void Inserir_5(Usuario usuario1)      
+        => Conexao.Insert<Usuario>(usuario1);
+        
+   public void Atualizar()
+   {
+        using(Conexao)
+        {
+            Usuario u = new Usuario()
+            {
+                nome_usuario = "Marinalda Duarte Joge",
+            };
+
+            Conexao.Get<Usuario>(10);
+            Conexao.Update<Usuario>(u);
+        }
+   }
+
+
+PRIMEIRAMENTE PARA SER UM USUÁRIO DO BLOG É NECESSÁRIO FAZER UM CADASTRO..APÓS TER FEITO O CADASTRO CRIAR UM PERFIL DE USUÁRIO
+

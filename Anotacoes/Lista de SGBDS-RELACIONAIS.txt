@@ -1,0 +1,184 @@
+Mas afinal, o que é um SGBD?
+
+Os Sistemas de Gerenciamento de Banco de Dados, ou SGBDs, são conjuntos de softwares utilizados para o gerenciamento de uma base de dados, ou seja, são os programas utilizados para controlar, organizar, acessar e proteger as informações de uma empresa.
+
+IMPORTANTE: MySQL, PostgreSQL, Microsoft SQL Server  (e os demais que logo irei citar abaixo) são SGBDs e não “Bancos de Dados”, apesar de popularmente utilizarmos mais o termo Banco de Dados para nos referirmos a esses sistemas. Contudo, o termo correto é SGBD.
+
+Relacionais e NoSQL
+É importante notar que existem tipos de SGBDs, entre eles, os mais conhecidos e utilizados são:
+
+SGBDs relacionais, difundidos e consolidados já há algum tempo;
+E os conhecidos como NoSQL (Not Only SQL). Estes últimos, cada vez mais vem conquistando espaço nas organizações.
+Esse movimento é explicado, pois o escalonamento de dados relacionais para grandes volumes de dados é mais custoso. Em outras palavras, quanto maior o tamanho exigido, maior a quantidade de maquinário necessária e, por consequência, de mão de obra especializada para a sua correta manutenção. Já, os SGBDs não relacionais, não exigem máquinas muito poderosas e, por isso, possuem uma manutenção facilitada, exigindo menos mão de obra. Logo, a sua escalabilidade exige menos investimentos.
+
+Sendo assim, se entendermos que a redução de custos é um desafio constante para qualquer organização, fica claro o porquê do crescimento do NoSQL (não relacionais).
+
+Isso quer dizer que NoSQL é melhor?
+Não! Tudo depende. A escolha entre Relacional, NoSQL ou qualquer outra categoria de Banco de Dados irá depender de uma série de fatores. O argumento citado acima é apenas um que conta a favor do NoSQL. Contudo, a comparação entre os tipos de SGBDs merece um post específico
+
+…mas prosseguindo com o nosso assunto, a escolha do tipo de SGBD irá depender muito da situação e cenário encontrado em cada empresa.
+
+Exemplo: a empresa X trabalha com MySQL há 30 anos, toda a sua equipe é especialista em MySQL, possuem o domínio completo do Banco de Dados.
+Em algum momento, por alguma particularidade do negócio ou mercado, talvez essa empresa até realize a migração para outro tipo de Banco de Dados, como o Oracle, SQL Server ou o MongoDB, mas ficou claro que isso irá depender de muitas variáveis, certo? Até porque, é impossível migrarmos uma base de dados inteira sem qualquer tipo de planejamento.
+
+Funções de um SGBD
+Entre os principais SGBDs existentes no mercado, basicamente todos possuem funcionalidades em comum:
+
+Inserir, excluir, acessar, visualizar, selecionar, ordenar, juntar ou intercalar registros;
+Copiar e eliminar ficheiros;
+Alterar estruturas de campos;
+Inserir, remover e estabelecer relações entre tabelas;
+Importar ou exportar dados entre outras bases de dados;
+Criar chaves primárias e externas;
+Realizar consultas, elaborar formulários e relatórios na base de dados;
+Criar usuários, com permissões de acesso diferenciados.
+Claro, além dessas funções mais padrões, existem as mais avançadas que, basicamente, serão os diferenciais entre cada SGBD. E, em muitos casos, o que será determinante para a escolha entre um sistema ou outro.
+
+Falando em sistemas, finalmente, apresento a vocês, os principais SGBDs existentes no mercado mundial de Banco de Dados
+
+
+
+
+Os 10 principais SGBDs do mercado mundial
+
+1-ORACLE
+
+Originada nos anos 80, criado por Larry Ellison, a Oracle é hoje uma das maiores empresas de tecnologia do mundo, sendo que desde 2009 é também proprietária das linhas de software Java.
+
+O SGBD é o seu principal produto e desde o seu lançamento no mercado vem sendo aperfeiçoado e desenvolvido para atender as necessidades de empresas e do mundo conectado em que vivemos. Existem diversas versões do software, sendo que cada uma delas contam com características que a tornam ideal à diferentes modelos de negócio. É um software focado para as necessidades de empresas de médio e grandes porte.
+
+Vale lembrar que, até o momento, o SGBD da Oracle é relacional. Para manipulação e gestão do sistema, utiliza-se a linguagem PL/SQL. Linguagem desenvolvida pela Oracle, a partir do SQL (ANSI), expandindo a sua capacidade original.
+
+Domínio do mercado
+Com amplo domínio de mercado, conhecer a linguagem utilizada no SGBD da Oracle é fundamental para o profissional de TI que visa ingressar na carreira como um DBA. Você pode ter mais informações acessando o site oficial da Oracle. No Brasil, possuímos poucas empresas consolidadas na prática do ensino a administração do SGBD da Oracle, contudo, a TargetTrust destaca-se nesse segmento. Portanto, se você deseja saber tudo de Oracle, vale uma visita ao site da TargetTrust também.
+
+2-MySql
+
+Um dos bancos de dados mais utilizados e populares, trata-se de uma tecnologia Open Source, ou seja, de código aberto. Isto permite que o desenvolvimento do mesmo seja realizado de acordo com as necessidades de uma organização.
+
+Além disso, sua facilidade de uso e capacidade de rodar em diferentes sistemas operacionais garante lugar cativo na preferência de grandes empresas por todo o globo. É considerado o SGBD mais popular no mundo.
+
+Oracle + MySQL = ?
+Atualmente, pertence a Oracle que, além de fomentar o uso da tecnologia Open Source, ainda disponibiliza uma versão mais robusta (paga, é claro), contando com funcionalidades da empresa, como: alta disponibilidade de monitoramento, firewalls, backups avançados, auditoria e entre outras.
+
+Para o profissional de TI, conhecer e saber utilizar o MySQL, que é SGBD relacional, pode ser considerado tão importante quanto o conhecimento do SGBD Oracle. Em outras palavras, é praticamente obrigatório para quem deseja aproveitar a todas as oportunidades do mercado (empresas de pequeno, médio e grande porte).
+
+Você pode ter mais informações acessando o site do MySQL. Na Becode, possuímos um treinamento completo sobre MySQL e linguagem SQL, veja mais aqui.
+
+
+3-Microsoft Sql Server
+
+O poderoso SGBD relacional da Microsoft, lançado em 1988 como parte do Windows NT e posteriormente comercializado como um produto separado e em constante desenvolvimento desde então.
+
+Seu grande diferencial com relação às outras opções já citadas é a possibilidade do desenvolvedor utilizar linguagens de programação gerenciadas, como o C# e o Visual Basic .NET, ao invés de usar declarações SQL. Obviamente, você também pode utilizar o SQL, ou melhor, o T-SQL – extensão do SQL (ANSI) para o MS SQL Server. O MS SQL Server também possibilita consultas transparentes.
+
+O Microsoft SQL Server é uma opção extremamente poderosa e, apesar de ser uma solução totalmente paga, sempre figura entre os TOP 5 dos principais rankings da área.
+
+Você pode ter mais informações acessando o site do produto. E, na Becode, recentemente lançamos um curso que introduz o aluno completamente no universo desse SGBD incrível, vale a pena confe
+
+
+
+4-POSTGRESQL
+
+
+Banco de dados relacional e Open Source, desenvolvido pela PostgreSQL Global Development Group. Lançado em 1989 e frequentemente se estabelece entre os cinco sistemas de gerenciamento de bancos de dados mais utilizados por organizações do mundo todo.
+
+Assim como MySQL, é muito utilizado para sistemas web, permitindo que o desenvolvimento de soluções seja realizado de forma que atenda às necessidades específicas de um negócio, desta forma, alcançando um melhor desempenho.
+
+The world’s most advanced open source database (Em português, “O banco de dados open source mais avançado do mundo”).
+
+[easy-tweet tweet=”The world’s most advanced open source database #PostgreSQL” user=”BecodeTT” hashtags=”SGBD” template=”light”]
+
+
+Este é o slogan do PostgreSQL. No Brasil, organizações públicas tem procurado se especializar na tecnologia, visando a adoção do software livre, bem como, otimização e organização dos dados e, claro, redução de custos!
+
+Você pode ter mais informações acessando postgresql.org. Além de treinamentos para o SGBD Oracle, a TargetTrust também disponibiliza cursos presenciais a profissionais e empresas que buscam se especializar no PostgreSQL, veja mais aqui.
+
+
+5-MongoDB
+
+
+Um dos SGBDs que mais cresceu nos últimos anos. Trata-se de um sistema NoSQL que foi lançado em 2009 pela empresa que leva o mesmo nome.
+
+O SGBD procura unir o melhor dos sistemas relacionais e as inovações do NoSQL, mantendo muitas características do primeiro, como índices e consultas dinâmicas, mas também com o modelo de dados orientados a documentos.
+
+Dessa forma, os ganhos de agilidade através de esquemas flexíveis e a maior facilidade na escalabilidade horizontal, são relevantes quando comparados a outras soluções. O software é Open Source, assim como, o MySQL e o PostgreSQL. O que permite o desenvolvimento do sistema conforme as necessidades do negócio.
+
+Com o crescimento da preferência no uso do Mongo DB, o profissional de TI que dominar JavaScript (linguagem utilizada pelo sistema), possui grandes chances de se destacar no mercado atual. Você pode ter mais informações sobre o MongoDB aqui.
+
+
+
+6-IBM
+
+
+Banco de dados da gigante IBM. Lançando ainda na década de 1980, embora seu desenvolvimento tenha ocorrido durante os anos de 70. Se valendo da teoria dos bancos de dados relacionais, desenvolvida por Edgar Frank Codd, que na época trabalhava para a empresa.
+
+Curiosidade rápida:
+A IBM não acreditava no potencial de Codd e na linguagem que havia desenvolvido, deixando-o de fora de seus projetos e menosprezando diversas ideias do matemático. Em outras palavras, o pai da teoria dos bancos de dados relacionais foi um mero figurante no desenvolvimento do produto final. Cruel, não?
+
+Voltando ao DB2 e a IBM, o sistema é marcado pelo pioneirismo e, além disso, pelo seu suporte aos sistemas operacionais.
+
+Historicamente, disputou a primeira posição do mercado com a Oracle durante muitos anos. Contudo, o surgimento e desenvolvimento de novas funcionalidades nos outros SGBDs contribuíram para uma significativa perda de espaço para o DB2. Ainda é um sistema extremamente relevante. Você pode ter mais informações acessando o site oficial da IBM.
+
+
+
+7-Cassandra
+
+
+Banco de dados não relacional (NoSQL), desenvolvido inicialmente pelo Facebook que, em 2008, tornou o SGBD open source. Em outras palavras, abriu o código para o mercado. Atualmente, é mantido por desenvolvedores da fundação Apache (Organização sem fins lucrativos criada com o objetivo de prover suporte para projetos de código aberto).
+
+Assim como alternativas NoSQL, sua grande vantagem é a capacidade de escalabilidade sem perda de performance. E, assim como o MongoDB, utiliza como linguagem de programação padrão, o JavaScript.
+
+Atenção aos detalhes!
+Em 2008, o Facebook, uma empresa extremamente à frente do seu tempo, precisou desenvolver um SGBD próprio, pois os SGBDs da época não atendiam às suas necessidades. Sim, isso é um indicativo de que NoSQL é uma tendência e trata-se de um conhecimento extremamente relevante. E, possivelmente, no futuro, poderá ameaçar a hegemonia do sistemas relacionais. Por isso, para aqueles que pensam em longo prazo, dominar a linguagem JavaScript também será essencial para Administradores de Banco de Dados (DBAs).
+
+Você pode ter mais informações sobre o sistema aqui, acessando o site cassandra.apache.org
+
+
+
+8-Microsoft Access
+
+
+Sim, o Access é considerado um SGBD relacional. Trata-se de uma tecnologia desenvolvida pela Microsoft e atualmente integrante do pacote Office.
+
+A linguagem de desenvolvimento utilizada no SGBD é o Visual Basic (VBA), embora também seja compatível com SQL. Isto permite que os usuários misturem ambas no tratamento dos dados.
+
+O Access já foi uma tecnologia a frente de seu tempo. Hoje, embora seja útil no desenvolvimento de projetos menores e para ensino em faculdades, o Microsoft Access sofre com problemas de escala em projetos maiores. Devido a esse fator, ele é desconsiderado em médias e grandes empresas. Apesar de todos os seus problemas, o sistema ainda conta com um bom número de usuários.
+
+Você pode ter mais informações acessando o site oficial da Microsoft.
+
+
+9-Redis
+
+
+Banco de dados NoSQL baseado em chave-valor, pode armazenar diversos tipos de dados como: strings, listas, conjuntos, hashes e sorted sets.
+
+Muito rápido e leve, é capaz de aguentar C10k e replicação. E, assim como alternativas semelhantes, tem crescido significativamente na preferência de uso entre empresas. Seu uso simples é uma das grandes vantagens.
+
+Importante: mais um SGBD NoSQL entre as 10 primeiras posições. O Mark (Facebook) é um visionário ou não é?
+
+[easy-tweet tweet=”Mais um SGBD NoSQL entre as 10 primeiras posições. O Mark (Facebook) é um visionário ou não é?” user=”BecodeTT” usehashtags=”no” template=”light”]
+
+Você pode ter mais informações acessando o site redis.i
+
+
+10-SqlLite
+
+
+Desenvolvido por Richard Hipp, o SQLite é uma biblioteca em linguagem C, que permite o uso de um banco de dados SQL. Sendo que, ao invés de se conectar a um grande servidor de banco de dados, ele é o próprio servidor.
+
+Seu uso é recomendado quando há facilidade na administração e a implementação e manutenção dos dados são fatores mais importantes que os incontáveis recursos que os demais SGBDs podem oferecer. É ideal para sites com poucos acessos, aplicações desktop, ferramentas estáticas de análise e entre outras.
+
+Além disso, é um software livre e de domínio público, suporta dados abaixo de 2 terabytes e não tem dependências externas, o que facilita seu uso por pequenas e médias empresas. Você pode ter mais informações acessando o sqlite.org
+
+
+11-MariaDB
+
+
+O MariaDB vale um destaque pela sua história, pois ele é originado a partir do MySQL, um dos sistemas mais populares do mercado mundial.
+
+Após a compra do MySQL pela Oracle, o seu fundador Michael “Monty” Widenius adotou o seguinte objetivo profissional: desenvolver um novo SGBD que mantenha e aperfeiçoe as caraterísticas do sistema anterior. O resultado disso foi o MariaDB, lançado em 2009.
+
+Com funcionamento igual ao MySQL, o grande diferencial do MariaDB (SGBD relacional) é a sua forte preocupação com a segurança dos dados, sendo que constantemente novos patches sobre isso são disponibilizados aos usuário.
+
+É apontado como um substituto ao sistema anteriormente desenvolvido por Widenius, o MySQL. Possui boas perspectivas de crescimento e de uso dentro das organizações. Vale a pena conhecer e acompanhar os seus próximos passos. Mais informações em mariadb.org

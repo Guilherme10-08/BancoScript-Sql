@@ -1,0 +1,65 @@
+
+DISCIPLINA: BANCO DE DADOS
+
+ASSUNTO: ÍNDECE
+
+* OQUE É UM ÍNDICE E QUAL A SUA IMPORTÂNCIA?
+
+Quando estamos a consultar um livro, em algumas situações queremos apenas ler um ponto específico, um determinado tema ou capítulo de modo a evitar a necessidade de ler o livro todo para chegar ao ponto que se pretende, e para resolver essa situação recorremos ao indice do livro procurando exatamente pela página do assunto que queremos consultar. 
+
+É exatamente essa mesma ideia aplicada no cenário de banco de dados! 
+
+Em uma base de dados o índice é um recurso usado para otimizar o retorno de dados em uma consulta, nos retornando exatamente oque foi introduzido no campo de  pesquisa sem precisar percorrer todas as linhas de um determinado campo.
+
+QUANDO USAR O ÍNDECE?
+
+É recomendado usar o índece Quando temos uma tabela extensa com mais de mil registros e a consulta por dados em alguns campos dessa mesma tabela é feita com muita frequência. 
+
+Vantagens DE USAR O ÍNDICE!
+
+Otimização de pesquisa, a consulta torna se mais rápida e dinâmica visto que os dados são buscados direito ao ponto descartando a possiblidade de percorrer todas as linhas de um campo em uma tabela de banco de dados.
+
+NOTA: Uma tabela em banco de dados pode ter milhões de registros! Não existe um limite máximo de linhas de armazenamento de dados uma vez que os números são infinitos, a quantidade de linhas aumenta na medida que o banco vai indo crescendo.
+
+
+
+
+    <section id="desenvolvimento-software">
+
+            <ul>
+                <li> <h1>Desenvolvimento de SoftWare</h1></li>
+            </ul>
+           
+            <p>
+		O mundo tem se tornado a cada dia que passa mais tecnológico, todos os dias os desenvolvedores de 			sistema têm criado novas e diversas soluções tecnológicas para suprir e melhorar uma determinada 			atividade diária.
+	   </p>
+
+            <p>
+		Diariamente as empresas fazem o uso dos softwares, é raro hoje em dia veres uma empresa que trabalha 		sem programas isso porque o software é um recurso bastante importatnte para a produtividade de uma 		determinada empresa. Mas não existem apenas sotwares empresriais, existem também sistemas para as 			mais diversas áreas como agricultura, medicina,ensino e etc. 
+	   </p>
+
+            <picture id="tecnologia">
+                <img src="css/tecnologia.jpg" alt="Logo-tecnologia">
+            </picture>
+
+        </section>
+
+        <section>
+
+            <ul>
+		<li>
+		    <h1>Arquitetura de SoftWare</h1>
+		</li>
+	    </ul>
+
+            <p>
+		Para que um sofware seje bem implementado e correspondente com tudo que se pretende na sua exibição, 			é necessário que haja uma boa arquitetura um plano bem traçado desde a construção até a execução.
+	    </p>
+
+            <p><strong>Quando podemos considerar um software como bom?</strong></p>
+
+            <p>
+		Podemos considerar um sotware como bom quando ele atende todos os requisitos de planejamente e 				resolve as necessidades do usuário!
+	    </p>
+
+        </section>
